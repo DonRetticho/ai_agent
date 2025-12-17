@@ -6,7 +6,7 @@ def get_file_content(working_directory, file_path):
     try:
         working_dir_absol = os.path.abspath(working_directory)
         target_dir = os.path.normpath(os.path.join(working_dir_absol, file_path))
-        print(target_dir)
+        #print(target_dir)
 
         valid_target_dir = os.path.commonpath([working_dir_absol, target_dir]) == working_dir_absol
 
